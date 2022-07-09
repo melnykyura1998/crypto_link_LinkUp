@@ -1,0 +1,65 @@
+@import "src/variables";
+.wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 78%;
+  margin:  30px auto 0;
+  height: 70px/$mainWidth*100vw;
+  font-weight: 600;
+  font-size:18px;
+  color: $white;
+
+
+  .logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    .name{
+      font-size: 22px;
+    }
+    .img{
+      height: 54px;
+      width: 48px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+  }
+  .menuMobile{
+    display: none;
+  }
+}
+@media (max-width: 1024px){
+  .wrap{
+
+    .logo{
+
+      .name{
+        font-size: 14px/$mobileWidth*100vw;
+      }
+      .img{
+        height: 35px/$mobileWidth*100vw;
+        width: 35px/$mobileWidth*100vw;
+
+        margin-right: 20px/$mobileWidth*100vw;
+      }
+    }
+    .menuWrap{
+      display: flex;
+      flex-direction: column;
+    }
+    .login{
+      display: none;
+    }
+    .loginActive{
+      display: block;
+      font-size:14px/$mobileWidth*100vw;
+      margin-top: 5px ;
+    }
+    .menuMobile{
+      display: block;
+    }
+  }
+}

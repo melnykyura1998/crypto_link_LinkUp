@@ -1,0 +1,196 @@
+@import "src/variables";
+
+.wrap {
+  padding: 260px/$mainWidth*100vw 0 300px/$mainWidth*100vw;
+  width: 100%;
+  background: $white;
+  position: relative;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+    .title1 {
+      color: $black;
+      font-size: 64px/$mainWidth*100vw;
+      font-weight: 700;
+      width: 1073px/$mainWidth*100vw;
+      align-items: center;
+
+      > span {
+        color: $green;
+      }
+    }
+
+    .buttons {
+      display: flex;
+      margin-top: 90px;
+      width: 512px;
+      justify-content: space-between;
+
+    }
+  }
+
+  .contentWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px/$mainWidth*100vw;
+
+    .instructions {
+      margin-left: 210px/$mainWidth*100vw;
+    }
+
+    .img {
+      width: 890px/$mainWidth*100vw;
+      //height: 1000px/$mainWidth*100vw;
+    }
+  }
+
+  .buttons2 {
+    display: none;
+  }
+}
+
+.itemWrap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: start;
+  margin: 45px/$mainWidth*100vw 0 45px/$mainWidth*100vw;
+
+  .titleWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 500px/$mainWidth*100vw;
+
+
+    .title {
+      font-weight: 700;
+      font-size: 28px/$mainWidth*100vw;
+      line-height: 45px/$mainWidth*100vw;
+      color: $black;
+      margin-top: 22px;
+      word-wrap: break-word;
+    }
+
+    .subtitle {
+      font-size: 18px/$mainWidth*100vw;
+      font-weight: 500;
+      line-height: 33px/$mainWidth*100vw;
+      color: $silverText;
+      word-wrap: break-word;
+    }
+
+  }
+
+  .number {
+    width: 80px/$mainWidth*100vw;
+    height: 80px/$mainWidth*100vw;
+    border-radius: 50%;
+    background: $black;
+    font-weight: 700;
+    font-size: 28px/$mainWidth*100vw;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrap {
+    padding: 100px/$mobileWidth*100vw 0;
+
+    .header {
+      .title1 {
+        font-size: 32px/$mobileWidth*100vw;
+        width: 350px/$mobileWidth*100vw;
+        align-items: center;
+        text-align: center;
+
+      }
+
+      .buttons {
+        display: none;
+      }
+    }
+
+    .contentWrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px/$mobileWidth*100vw;
+
+      .instructions {
+        margin: 0;
+        width: 100%;
+      }
+
+      .img {
+        width: 100vw;
+      }
+    }
+
+    .buttons2 {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      height: 130px;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .itemWrap {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px/$mobileWidth*100vw auto;
+    width: 90%;
+
+
+    .titleWrap {
+      width: 100%;
+      align-items: center;
+
+
+      .title {
+        font-weight: 700;
+        font-size: 20px/$mobileWidth*100vw;
+        line-height: 28px/$mobileWidth*100vw;
+        text-align: center;
+        margin: 40px/$mobileWidth*100vw 0;
+
+      }
+
+      .subtitle {
+        font-size: 14px/$mobileWidth*100vw;
+        line-height: 25px/$mobileWidth*100vw;
+        text-align: center;
+      }
+
+    }
+
+    .number {
+      width: 46px/$mobileWidth*100vw;
+      height: 46px/$mobileWidth*100vw;
+      font-size: 18px/$mobileWidth*100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+

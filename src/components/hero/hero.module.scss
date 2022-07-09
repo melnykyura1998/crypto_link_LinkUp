@@ -1,0 +1,135 @@
+@import "src/variables";
+
+.vrap {
+  width: 100%;
+  height: 1086px/$mainWidth*100vw;
+  background: -webkit-linear-gradient(left, rgb(21, 23, 23) 72%, rgb(30, 51, 39));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+
+  .contentWraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .imgWrap {
+      height: 907px/$mainWidth*100vw;
+      width: 705px/$mainWidth*100vw;
+    }
+
+    .imgs {
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .ellipses {
+      position: relative;
+      color: red;
+      height: 600px/$mainWidth*100vw;
+      bottom: 600px/$mainWidth*100vw;
+    }
+
+    .content {
+      width: 871px/$mainWidth*100vw;
+      align-self: center;
+      margin: 0 0 5vw 210px/$mainWidth*100vw;
+
+      > div {
+        color: $white;
+      }
+
+      .titel {
+        font-size: 84px/$mainWidth*100vw;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        font-weight: 500;
+        font-size: 22px/$mainWidth*100vw;
+        padding: 5vw 0;
+      }
+
+      .button {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 542px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .vrap {
+    height: 1131px/$mobileWidth*100vw;
+    background: -webkit-linear-gradient(top, rgb(21, 23, 23) 42%, rgb(30, 51, 39));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .contentWraper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 1000px/$mobileWidth*100vw;
+      margin-top: 60px/$mobileWidth*100vw;
+
+      .imgWrap {
+        height: 482px/$mobileWidth*100vw;
+        width: 100%;
+      }
+
+      .imgs {
+        width: 343px/$mobileWidth*100vw;
+        top: 40px/$mobileWidth*100vw;
+        left: 45px/$mobileWidth*100vw;
+
+      }
+
+      .ellipses {
+        position: relative;
+        height: 300px/$mobileWidth*100vw;
+        bottom: 250px/$mobileWidth*100vw;
+        right: 170px/$mobileWidth*100vw;
+      }
+
+      .content {
+        width: 100vw;
+        padding: 0 20px/$mobileWidth*100vw 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 0 0 0;
+
+        .titel {
+          font-size: 46px/$mobileWidth*100vw;
+          text-align: center;
+          align-items: center;
+
+        }
+
+        .subtitle {
+          font-size: 14px/$mobileWidth*100vw;
+          text-align: center;
+
+        }
+
+        .button {
+          display: flex;
+          height: 52px;
+          width: 350px;
+          flex-wrap: wrap;
+
+        }
+      }
+    }
+  }
+}
+

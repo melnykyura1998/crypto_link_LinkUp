@@ -1,0 +1,132 @@
+@import "src/variables";
+
+.cardWrap {
+  width: 345px/$mainWidth*100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px/$mainWidth*100vw;
+
+  .background {
+    width: 100%;
+  }
+
+  .logo {
+    border-radius: 50%;
+    width: 159px/$mainWidth*100vw;
+    height: 159px/$mainWidth*100vw;
+    position: relative;
+    top: 141px/$mainWidth*100vw
+  }
+
+  .name {
+    font-size: 28px/$mainWidth*100vw;
+    font-weight: 700;
+    color: $black;
+    position: relative;
+    bottom: (((345px/$mainWidth)*35vw)-12px/$mainWidth*100vw);
+  }
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  .cardsWraper {
+    display: flex;
+    justify-content: center;
+  }
+  .cardsWraperMobile{
+    display: none;
+  }
+
+  .title {
+    color: $black;
+    font-size: 64px/$mainWidth*100vw;
+    font-weight: 700;
+  }
+
+  .subTitle {
+    font-weight: 500;
+    font-size: 22px/$mainWidth*100vw;
+    color: $silverText;
+    width: 1000px/$mainWidth*100vw;
+    padding-top: 50px/$mainWidth*100vw;
+    line-height: 44px/$mainWidth*100vw;
+  }
+
+}
+
+@media (max-width: 1024px){
+  .cardWrap {
+    width: 255px/$mobileWidth*100vw;
+    margin: 0 10px/$mobileWidth*100vw;
+
+    .logo {
+      width: 121px/$mobileWidth*100vw;
+      height: 121px/$mobileWidth*100vw;
+      top: 105px/$mobileWidth*100vw
+    }
+
+    .name {
+      font-size: 28px/$mobileWidth*100vw;
+      bottom: (((345px/$mobileWidth)*35vw)-12px/$mobileWidth*100vw);
+    }
+  }
+
+  .wrap {
+    width: 350px/$mobileWidth;
+    margin: 0 auto;
+
+    .cardsWraper {
+      display: none;
+    }
+
+    .cardsWraperMobile {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+    }
+    .buttons{
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      align-items: center;
+      height: 12px/$mobileWidth*100vw;
+      img{
+        width: 12px/$mobileWidth*100vw;
+      }
+      .active{
+        width: 10px/$mobileWidth*100vw;
+        height: 10px/$mobileWidth*100vw;
+        border-radius: 50%;
+        box-shadow: 0 0 2px 2px slategray;
+        background: $green;
+      }
+      .noActive{
+        width: 8px/$mobileWidth*100vw;
+        height: 8px/$mobileWidth*100vw;
+        background: $silverText;
+        border-radius: 50%;
+      }
+    }
+
+    .title {
+      font-size: 32px/$mobileWidth*100vw;
+    }
+
+    .subTitle {
+      font-size: 14px/$mobileWidth*100vw;
+      color: $silverText;
+      width: 100%;
+      padding-top: 50px/$mobileWidth*100vw;
+      line-height: 25px/$mobileWidth*100vw;
+      text-align: center;
+    }
+
+  }
+
+}
