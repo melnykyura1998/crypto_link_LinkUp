@@ -21,7 +21,7 @@ const Hero = () => {
                     <div className={classes.subtitle}>{data.hero.title}</div>
                     <div className={classes.button}>
                         <Button1 rotate={0}>LEARN MORE</Button1>
-                        <Button1 rotate={-135} color={`green`}>LEARN MORE</Button1>
+                        <Button1 rotate={-135} color={`green`}>GET STARTED</Button1>
                     </div>
                 </div>
                 <div className={classes.imgWrap}>
